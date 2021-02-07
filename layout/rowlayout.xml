@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    one row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/backrow"
+        android:weightSum="5">
+<!--        texts-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtname"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@drawable/backtext"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                style="@style/txt1style"
+                android:text="mahsoul name"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtprice"
+                android:layout_height="0dp"
+                android:textColor="@android:color/black"
+                android:layout_margin="3dp"
+                android:background="@drawable/backtext"
+                android:padding="10dp"
+                android:layout_weight="1"
+                style="@style/txt1style"
+                android:text="mahsoul name"></TextView>
+        </LinearLayout>
+<!--        mahsoul image-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/logo"
+            android:id="@+id/pics"
+            android:background="@drawable/backshape2"
+            android:padding="10dp"></ImageView>
+    </LinearLayout>
+</LinearLayout>
